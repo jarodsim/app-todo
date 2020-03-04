@@ -2,25 +2,39 @@
 <html lang="pt-BR">
 
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148359375-4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-148359375-4');
+
+        </script>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon" />
-        <meta name="description" content="Site quiz de HTML feito por Jarod Cavalcante">
+        <meta name="description" content="Lista de afazeres |TODO| por Jarod Cavalcante">
         <meta name="keywords" content="TODO, lista de afazeres, jarod mateus, javascript, afazeres">
         <meta name="author" content="Jarod Mateus">
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;1,900&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="css/index.css">
-        <title>Todos</title>
+        <title>Pra Fazer</title>
     </head>
 
     <body>
         <div id="app">
-            <h1>TODO</h1>
+            <h1>Pra Fazer</h1>
             <ul>
                 <!--Gerado por JS-->
             </ul>
-            <input type="text" name="entrada" id="entrada" placeholder="Digite um Todo">
+            <input type="text" name="entrada" id="entrada" placeholder="Adicione algo à lista">
 
             <button onclick="addTodo()">Adicionar</button>
             <a href="http://jarodmateus.herokuapp.com/">

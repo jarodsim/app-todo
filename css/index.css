@@ -9,17 +9,23 @@ body {
 }
 
 li {
-    list-style: none;
+    list-style-type: "\1F449";
+    list-style-position: inside;
     margin: 10px;
+    padding: 2px;
+    font-size: 22px;
+    word-wrap: break-word;
 }
 
 a {
     text-decoration: none;
 }
 
-p {
+footer {
+    text-align: center;
     font-style: italic;
     margin-top: 10px;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 button {
@@ -27,6 +33,7 @@ button {
     border-radius: 3px;
     width: 100px;
     height: 30px;
+    margin-right: 5px;
     font-family: 'Fira Sans', sans-serif;
     color: tomato;
     background-color: white;
@@ -45,7 +52,7 @@ input {
 }
 
 #app {
-    max-width: 500px;
+    max-width: 700px;
     padding: 20px;
     margin: auto;
     margin-top: 10%;

@@ -14,7 +14,7 @@ function renderTodos() {
 
     for (todo of todos) {
         let todoElement = document.createElement('li')
-        let todoText = document.createTextNode('- ' + todo)
+        let todoText = document.createTextNode(todo)
         let linkElement = document.createElement('button')
         let linkText = document.createTextNode('Excluir')
 
@@ -57,8 +57,19 @@ function deleteTodo(pos) {
     saveToStorage()
 }
 
-/*Add dados no LocalStorage */
+/*Função para add com a tecla ENTER */
+addEnter()
 
+function addEnter() {
+    let input = document.getElementById('entrada')
+
+    input.addEventListener('keydown', function (event) {
+        if (event.keyCode === 13) {
+            addTodo()
+        }
+    })
+}
+/*Add dados no LocalStorage */
 function saveToStorage() {
     //Convertendo vetor em JSON, pois o localStorage não suporta array, apenas String
     localStorage.setItem('list_todos', JSON.stringify(todos))

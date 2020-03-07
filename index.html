@@ -13,14 +13,13 @@
             gtag('js', new Date());
 
             gtag('config', 'UA-148359375-4');
-
         </script>
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon" />
         <meta name="description" content="Lista de afazeres |TODO| por Jarod Cavalcante">
-        <meta name="keywords" content="TODO, lista de afazeres, jarod mateus, javascript, afazeres">
+        <meta name="keywords" content="TO DO, lista de afazeres, minha lista, jarod mateus, javascript, afazeres">
         <meta name="author" content="Jarod Mateus">
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;1,900&display=swap"
             rel="stylesheet">
@@ -30,17 +29,26 @@
 
     <body>
         <div id="app">
-            <h1>Pra Fazer</h1>
-            <ul>
-                <!--Gerado por JS-->
-            </ul>
-            <input type="text" name="entrada" id="entrada" placeholder="Adicione algo à lista">
 
-            <button onclick="addTodo()">Adicionar</button>
+            <header>
+                <h1>Minha Lista &#10003;</h1>
+            </header>
+
+            <section>
+                <ul>
+                    <!--Gerado por JS-->
+                </ul>
+                <input type="text" name="entrada" id="entrada" placeholder="Adicione algo à lista">
+                <button onclick="addTodo()">Adicionar</button>
+            </section>
+        </div>
+
+        <footer>
             <a href="http://jarodmateus.herokuapp.com/">
                 <p>&copy Jarod Mateus</p>
             </a>
-        </div>
+        </footer>
+
         <script src="js/index.js"></script>
     </body>
 

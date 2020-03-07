@@ -1,4 +1,4 @@
-# App de TODO (Pra Fazer) desenvolvido com html, css e javascript
+# App de TO DO (Minha Lista) desenvolvido com html, css e javascript
 
 ### O app é simples, explicarei brevemente a *lógica* abaixo:
 
